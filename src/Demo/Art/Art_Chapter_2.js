@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../Assets/arrow-jump.svg";
+import arrow from "../../Assets/arrow-jump.svg";
 
 /**
  * @author
@@ -20,17 +20,25 @@ const Section = (props) => {
   );
 };
 
-export const Chapter = (props) => {
+export const Art_Chapter_2 = (props) => {
   return (
     <div className="text-left mb-6">
       <h3 className="font-bold mb-2 text-xl">{props.header}</h3>
       <div className="flex flex-col w-full border border border-gray-300 rounded-xl">
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
+        <Section
+          href=""
+          title="What to do other than building myself as a writer?"
+        />
+        <Section href="" title="Turn your writing into data mining machine." />
+        <Section href="" title="This is your “Writing Data Flywheel.”" />
+        <Section
+          href=""
+          title="I believe it is so important to Practice In Public"
+        />
+        <Section
+          href=""
+          title="Practicing In Public is what separates aspiring writers from professional writers."
+        />
       </div>
     </div>
   );

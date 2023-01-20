@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../Assets/arrow-jump.svg";
+import arrow from "../../Assets/arrow-jump.svg";
 
 /**
  * @author
@@ -20,17 +20,21 @@ const Section = (props) => {
   );
 };
 
-export const Chapter = (props) => {
+export const Art_Chapter_3 = (props) => {
   return (
     <div className="text-left mb-6">
       <h3 className="font-bold mb-2 text-xl">{props.header}</h3>
       <div className="flex flex-col w-full border border border-gray-300 rounded-xl">
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
+        <Section href="" title="Level 1: Conscious vs Unconscious" />
+        <Section href="" title="Level 2: Choose A Category" />
+        <Section href="" title="Level 3: Define Your “Style”" />
+        <Section
+          href=""
+          title="Level 4: Optimize Your Writing Style For Speed"
+        />
+        <Section href="" title="Level 5: Specificity Is The Secret" />
+        <Section href="" title="Level 6: Engineering Credibility" />
+        <Section href="" title="Level 7: Create Your Own Category" />
       </div>
     </div>
   );

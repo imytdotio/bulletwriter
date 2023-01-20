@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../Assets/arrow-jump.svg";
+import arrow from "../../Assets/arrow-jump.svg";
 
 /**
  * @author
@@ -20,17 +20,20 @@ const Section = (props) => {
   );
 };
 
-export const Chapter = (props) => {
+export const Art_Chapter_1 = (props) => {
   return (
     <div className="text-left mb-6">
       <h3 className="font-bold mb-2 text-xl">{props.header}</h3>
       <div className="flex flex-col w-full border border border-gray-300 rounded-xl">
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
-        <Section href="" title="Preample" />
+        <Section href="/books/the-art-and-business-of-online-writing/1/1" title="The definition of a blog." />
+        <Section href="/books/the-art-and-business-of-online-writing/1/2" title="The definition of a website." />
+        <Section href="/books/the-art-and-business-of-online-writing/1/3" title="The definition of Online Writing" />
+        <Section href="/books/the-art-and-business-of-online-writing/1/4" title="And how do you get traffic to your blog?" />
+        <Section href="/books/the-art-and-business-of-online-writing/1/5" title="So, when should you start a blog?" />
+        <Section
+          href="the-art-and-business-of-online-writing/1/6"
+          title="Why didn't you start blogging to drive sales?”"
+        />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Book } from "./Book";
 /**
@@ -9,7 +10,7 @@ import { Book } from "./Book";
 export const Home = (props) => {
   return (
     <div>
-      <Book />
+      <Link to='/books/22-laws-of-digital-writing'>Laws</Link>
     </div>
   );
 };

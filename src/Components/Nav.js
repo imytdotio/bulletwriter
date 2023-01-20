@@ -21,8 +21,9 @@ export const Nav = (props) => {
       <NavLink to="/" >
         <img src={logo} className="my-auto h-full" />
       </NavLink>
-      <div className="flex-1 m-auto md:visible invisible">
+      <div className="flex-1 m-auto md:visible invisible flex gap-4">
         <NavLink to="/create">Create</NavLink>
+        <NavLink to="/books/the-art-and-business-of-online-writing">Art</NavLink>
       </div>
       <div>
         <button className="w-[40px] h-[40px] my-0 mx-1 mr-3.5 rounded-full border border-full text-[18px] border-gray-300 bg-white flex justify-center align-items-center">
