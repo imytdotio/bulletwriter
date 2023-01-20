@@ -22,7 +22,7 @@ const Button = (props) => {
 export const Info = (props) => {
   return (
     <div className="p-2 duration-200">
-      <img src={cover} width={200} className="m-auto rounded-md mb-4" />
+      <img src={cover} width={200} className="m-auto rounded-xl mb-4 shadow-md" />
       <Button title="Read Online" href="" />
       <Button title="Buy on Amazon" href="" />
       <Button title="Download PDF" href="" />
@@ -31,7 +31,7 @@ export const Info = (props) => {
         <input
           className="w-full h-full flex-1 py-2 px-4"
           text="email"
-          placeholder="Enter your email"
+          placeholder="Get Latest Updates!"
         />
         <button className="bg-black text-white py-2 px-4 font-semibold">
           Subscribe
