@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import menuIcon from "../Assets/menu.svg";
 import logo from "../Assets/logo.png";
+import { NavLink } from "react-router-dom";
 
 /**
  * @author
@@ -17,11 +18,18 @@ export const Nav = (props) => {
 
   return (
     <div className="border-b h-16 py-4 px-8 flex flex-row">
-      <img src={logo} />
-      <div className="flex-1"></div>
-      <button className="header-menu-button w-[40px] h-[40px] my-0 mx-1 mr-3.5 rounded-full border border-full text-[18px] border-gray-300 bg-white flex justify-center align-items-center">
-        <img src={menuIcon} width={15}></img>
-      </button>
+      <NavLink to="/" >
+        <img src={logo} className="my-auto h-full" />
+      </NavLink>
+      <div className="flex-1 m-auto md:visible invisible">
+        <NavLink to="/create">Create</NavLink>
+      </div>
+      <div>
+        <button className="w-[40px] h-[40px] my-0 mx-1 mr-3.5 rounded-full border border-full text-[18px] border-gray-300 bg-white flex justify-center align-items-center">
+          <img src={menuIcon} width={15}></img>
+        </button>
+      </div>
+
       <Menu />
     </div>
   );
