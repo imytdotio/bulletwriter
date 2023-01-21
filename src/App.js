@@ -2,8 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { Home } from "./Page/Home";
 import { Nav } from "./Components/Nav";
-import { Create } from "./Page/Create";
-// import { Art_Book } from "./Demo/Art/Art_Book";
+import { Art_Create } from "./Demo/Art/Art_Create";
 import { Art_Book } from "./Demo/Art/Art_Book";
 import { Art_Ch1_P1 } from "./Demo/Art/Art_Chapter_1_1";
 import { Art_Ch1_P2 } from "./Demo/Art/Art_Chapter_1_2";
@@ -19,7 +18,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} exact />
-          <Route path="/create" element={<Create />} />
+          <Route path="/create" element={<Art_Create />} />
 
           <Route
             path="/books/the-art-and-business-of-online-writing"

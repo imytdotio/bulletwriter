@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import menuIcon from "../Assets/menu.svg";
 import logo from "../Assets/logo.png";
-import { NavLink } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
+import { FiMenu } from "react-icons/fi";
 /**
  * @author
  * @function Nav
@@ -17,21 +17,40 @@ export const Nav = (props) => {
   };
 
   return (
-    <div className="border-b h-16 py-4 px-8 flex flex-row">
-      <NavLink to="/" >
-        <img src={logo} className="my-auto h-full" />
-      </NavLink>
-      <div className="flex-1 m-auto md:visible invisible flex gap-4">
-        <NavLink to="/create">Create</NavLink>
-        <NavLink to="/books/the-art-and-business-of-online-writing">Art</NavLink>
-      </div>
-      <div>
-        <button className="w-[40px] h-[40px] my-0 mx-1 mr-3.5 rounded-full border border-full text-[18px] border-gray-300 bg-white flex justify-center align-items-center">
-          <img src={menuIcon} width={15}></img>
+    <div>
+      <div className="border-b flex px-8 w-screen">
+        {/* icon */}
+        <Link className="p-2 mr-8" to="/">
+          <img src={logo} className="h-full w-36" />
+        </Link>
+
+        {/* links */}
+        <div className="flex-1 my-auto">
+          {/* <NavLink to="">Art</NavLink> */}
+        </div>
+
+        {/* menu */}
+        <button
+          className="my-auto p-2 border rounded-full"
+          onClick={() => {
+            setToggleMenu(!toggleMenu);
+          }}
+        >
+          <FiMenu />
         </button>
       </div>
-
-      <Menu />
+      {toggleMenu ? (
+        <div className="w-full bg-blue-200 flex justify-end px-8">
+          <ul className="absolute flex-col px-4 items-start text-left justify-center border rounded-md w-36 bg-white pt-2 text-black pointer-events-none outline-none overflow-x-hidden overflow-y-auto">
+            <li className="pb-2">Account</li>
+            <li className="pb-2">Preferences</li>
+            <li className="pb-2">My Collection</li>
+            <li className="pb-2"F>Notes</li>
+          </ul>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
