@@ -7,7 +7,13 @@ import { FiMenu } from "react-icons/fi";
  * @author
  * @function Nav
  **/
-
+const NavItem = (props) => {
+  return (
+    <Link to={props.to}>
+      <li className="py-2 px-4 hover:bg-gray-100">{props.title}</li>
+    </Link>
+  );
+};
 export const Nav = (props) => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const Menu = () => {
@@ -40,12 +46,12 @@ export const Nav = (props) => {
         </button>
       </div>
       {toggleMenu ? (
-        <div className="w-full bg-blue-200 flex justify-end px-8">
-          <ul className="absolute flex-col px-4 items-start text-left justify-center border rounded-md w-36 bg-white pt-2 text-black pointer-events-none outline-none overflow-x-hidden overflow-y-auto">
-            <li className="pb-2">Account</li>
-            <li className="pb-2">Preferences</li>
-            <li className="pb-2">My Collection</li>
-            <li className="pb-2"F>Notes</li>
+        <div className="w-full flex justify-end px-8 ">
+          <ul className="shadow-md absolute flex-col items-start text-left justify-center border rounded-md w-36 bg-white text-black outline-none overflow-x-hidden overflow-y-auto">
+            <NavItem to="/" title="My Writings" />
+            <NavItem to="/" title="My Collection" />
+            <NavItem to="/" title="Notes" />
+            <NavItem to="/" title="Account" />
           </ul>
         </div>
       ) : (

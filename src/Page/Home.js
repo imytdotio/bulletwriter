@@ -14,6 +14,7 @@ export const Home = (props) => {
       {/* With progress bar on each book */}
 
       <div className="md:w-3/5 w-full flex flex-col p-8 md:m-auto">
+        {/* <h1 className="font-bold text-2xl mb-4">My Collection</h1> */}
         <Link
           to="/books/the-art-and-business-of-online-writing"
           className="w-full flex flex-col md:flex-row border rounded-md my-4"
