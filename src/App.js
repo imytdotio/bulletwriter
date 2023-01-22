@@ -10,6 +10,9 @@ import { Art_Ch1_P3 } from "./Demo/Art/Art_Chapter_1_3";
 import { Art_Ch1_P4 } from "./Demo/Art/Art_Chapter_1_4";
 import { Art_Ch1_P5 } from "./Demo/Art/Art_Chapter_1_5";
 import { Art_Ch1_P6 } from "./Demo/Art/Art_Chapter_1_6";
+import { NoteBoard } from "./Page/NoteBoard";
+import { AccountSettings } from "./Page/AccountSettings";
+import { MyCollection } from "./Components/MyCollection";
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/create" element={<Art_Create />} />
+          <Route path="/noteboard" element={<NoteBoard />} />
+          <Route path="/collection" element={<MyCollection />} />
+          <Route path="/account" element={<AccountSettings />} />
 
           <Route
             path="/books/the-art-and-business-of-online-writing"

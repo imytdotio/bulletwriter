@@ -48,10 +48,10 @@ export const Nav = (props) => {
       {toggleMenu ? (
         <div className="w-full flex justify-end px-8 ">
           <ul className="shadow-md absolute flex-col items-start text-left justify-center border rounded-md w-36 bg-white text-black outline-none overflow-x-hidden overflow-y-auto">
-            <NavItem to="/" title="My Writings" />
-            <NavItem to="/" title="My Collection" />
-            <NavItem to="/" title="Notes" />
-            <NavItem to="/" title="Account" />
+            <NavItem to="/create" title="My Writings" />
+            <NavItem to="/collection" title="My Collection" />
+            <NavItem to="/noteboard" title="Notes" />
+            <NavItem to="/account" title="Account" />
           </ul>
         </div>
       ) : (
